@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+const Container = styled.div`
   grid-area: MH;
   background-color: ${(props) => props.theme.colors.secondary};
 
@@ -12,10 +12,12 @@ export const Container = styled.div`
   border-bottom: 1px solid ${props => props.theme.colors.gray};
 `;
 
-export const Profile = styled.div`
+const Profile = styled.div`
   color: ${(props) => props.theme.colors.white};
 `;
 
-export const Welcome = styled.h3``;
+const Welcome = styled.h3``;
 
-export const UserName = styled.span``;
+const UserName = styled.span``;
+
+export { Container, Profile, Welcome, UserName };

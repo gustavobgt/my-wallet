@@ -3,7 +3,7 @@ import React, { useMemo } from 'react';
 import emojis from '../../utils/emojis'
 
 import { Container, Profile, Welcome, UserName } from './styles';
-import Toggle from '../Toggle/index'
+import Switch from '../Switch/index';
 
 const MainHeader: React.FC = () => {
 
@@ -14,7 +14,7 @@ const MainHeader: React.FC = () => {
   }, []);
   return (
     <Container>
-      <Toggle/>
+      <Switch/>
 
       <Profile>
         <Welcome>Olá, {emoji}</Welcome>

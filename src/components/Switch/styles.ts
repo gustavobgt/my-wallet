@@ -1,17 +1,17 @@
 import styled from 'styled-components';
 
-import SwitchButton, { ReactSwitchProps } from 'react-switch';
+import Switch, { ReactSwitchProps } from 'react-switch';
 
 const Container = styled.div`
     display: flex;
     align-items: center;
 `;
 
-const ToggleLabel = styled.span`
+const SwitchLabel = styled.span`
     color: ${props => props.theme.colors.white};
 `;
 
-const ToggleSelector = styled(SwitchButton).attrs<ReactSwitchProps>(
+const SwitchButton = styled(Switch).attrs<ReactSwitchProps>(
   ({ theme }) => ({
     onColor: theme.colors.info,
     offColor: theme.colors.warning
@@ -19,4 +19,4 @@ const ToggleSelector = styled(SwitchButton).attrs<ReactSwitchProps>(
       margin: 0 7px;
   `;
 
-  export { Container, ToggleLabel, ToggleSelector };
+  export { Container, SwitchLabel, SwitchButton };
